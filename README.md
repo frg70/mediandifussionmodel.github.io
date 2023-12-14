@@ -23,7 +23,7 @@ $$q(x_{1_\tau} | \frac{x_0 + x_{-1}}{2}) := \sum_{t=1}^\tau q(x_t | \frac{x_{t-1
 
 And training: 
 ```math 
-\mathcal{E}[-logp_\theta(x_0) \leq \mathcal{E}_q[-log\frac{p_\theta(x_{0:\tau}}{q(x_{1:\tau}|x_0} = \mathcal{E}_q[-logp(x_\tau) - \sum_{t \geq 1} log \frac{p_\theta(frac{x_{t-1} + x_{t-2}}{2}|x_t}{q(x_t|frac{x_{t-1} + x_{t-2}{2})}] =: L
+\mathcal{E}[-\log p_\theta(x_0) \leq \mathcal{E}_q\left[-\log\frac{p_\theta(x_{0:\tau})}{q(x_{1:\tau}|x_0)}\right] = \mathcal{E}_q\left[-\log p(x_\tau) - \sum_{t \geq 1} \log \frac{p_\theta\left(\frac{x_{t-1} + x_{t-2}}{2}\big|x_t\right)}{q(x_t|\frac{x_{t-1} + x_{t-2}}{2})}\right] =: L
 ```
 
 
