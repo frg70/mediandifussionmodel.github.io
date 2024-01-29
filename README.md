@@ -27,6 +27,24 @@ And training:
 \mathcal{E}\left[-\log p_\theta(x_0) \leq \mathcal{E}_q\left[-\log\frac{p_\theta(x_{0:\tau})}{q\left(\frac{x_{1:\tau} + x_{2:\tau}}{2}\Big|x_0\right)}\right]\right] &= \mathcal{E}_q\left[-\log p(x_\tau) - \sum_{t \geq 1} \log \frac{p_\theta\left(\frac{x_{t-1} + x_{t-2}}{2}\Big|x_t\right)}{q\left(x_t\Big|\frac{x_{t-1} + x_{t-2}}{2}\right)}\right] = L
 \end{align*}
 ```
+## About the Data
+The dataset used for training consisted of 3-5 second gifs from the TUMBLR-Gif dataset. For reference, visit [here](https://raingo.github.io/TGIF-Release/).
+
+## Results
+
+Below are the displayed GIFs presented in a 4 x 4 grid. The resolution was downsampled to meet computational requirements.
+
+**First steps of model without hybrid-noise**  
+![First steps](assets/firstStepsOfModel.gif) 
+![Last steps](assets/lastTrainingStepsWithNormalModel.gif)
+
+Hybrid noise was added to the model, which improved its performance and allowed it to converge faster. The final result is shown in the last image above. This shows that adding hybrid noise results in higher quality.
+
+**Results for hybrid noise**  
+![Results for hybrid noise](assets/hybridnoise.gif)
+
+
+
 
 
 
