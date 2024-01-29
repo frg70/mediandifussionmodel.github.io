@@ -35,7 +35,7 @@ The dataset used for training consisted of 3-5 second gifs from the TUMBLR-Gif d
 Below are the displayed GIFs presented in a 4 x 4 grid. The resolution was downsampled to meet computational requirements.
 
 **First steps of model without hybrid-noise**  
-![First steps](assets/firstStepsOfModel.gif) 
+<img src="assets/firstStepsOfModel.gif" alt="First steps" width="512" height="512"> 
 ![Last steps](assets/lastTrainingStepsWithNormalModel.gif)
 
 Hybrid noise was added to the model, which improved its performance and allowed it to converge faster. The final result is shown in the last image above. This shows that adding hybrid noise results in higher quality.
